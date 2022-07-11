@@ -8,5 +8,5 @@ export class Job extends BaseEntity {
   name: string;
 
   @OneToMany(() => Employee, (employee) => employee.job)
-  employee: Employee;
+  employees: Employee[];
 }

@@ -10,6 +10,6 @@ export class Employee extends BaseEntity {
   @Column()
   lastName: string;
 
-  @ManyToOne(() => Job, (job) => job.employee)
+  @ManyToOne(() => Job, (job) => job.employees)
   job: Job;
 }
