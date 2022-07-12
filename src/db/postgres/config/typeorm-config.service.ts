@@ -2,7 +2,7 @@ import { ConfigService } from '@nestjs/config';
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 import * as entities from '../entities';
 
-const entitiesList = Object.values(entities);
+export const entitiesList = Object.values(entities);
 
 export const createTypeOrmOptions = (
   configService: ConfigService,
