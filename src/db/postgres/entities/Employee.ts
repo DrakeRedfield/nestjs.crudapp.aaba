@@ -1,15 +1,16 @@
-import { Column, Entity, ManyToOne } from 'typeorm';
+import { Column, Entity, JoinColumn, ManyToOne } from 'typeorm';
 import { BaseEntity } from './BaseEntity';
 import { Job } from './Job';
 
 @Entity()
 export class Employee extends BaseEntity {
-  @Column()
+  @Column({ type: 'varchar', length: 120 })
   firstName: string;
 
-  @Column()
+  @Column({ type: 'varchar', length: 120 })
   lastName: string;
 
   @ManyToOne(() => Job, (job) => job.employees)
+  @JoinColumn({ name: 'jobId' })
   job: Job;
 }
