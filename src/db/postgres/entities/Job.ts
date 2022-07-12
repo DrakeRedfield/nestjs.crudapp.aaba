@@ -4,7 +4,7 @@ import { Employee } from './Employee';
 
 @Entity()
 export class Job extends BaseEntity {
-  @Column()
+  @Column({ type: 'varchar', length: 120 })
   name: string;
 
   @OneToMany(() => Employee, (employee) => employee.job)
