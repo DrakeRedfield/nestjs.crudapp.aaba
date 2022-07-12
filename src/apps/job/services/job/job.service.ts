@@ -27,14 +27,13 @@ export class JobService {
     newJobData: Omit<Partial<Job>, 'id'>,
   ): Promise<Job> {
     const previousJobData = await this.jobRepository.findOneBy({ id });
-    console.log(previousJobData);
     if (!previousJobData) throw new NotFoundException("Job doesn't exist");
 
     const editedJob = Object.assign(previousJobData, newJobData);
     return this.jobRepository.save(editedJob);
   }
 
-  removeJob(id: number): Promise<UpdateResult> {
+  deleteJob(id: number): Promise<UpdateResult> {
     return this.jobRepository.softDelete(id);
   }
 }

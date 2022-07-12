@@ -40,6 +40,6 @@ export class JobController {
 
   @Delete(':id')
   deleteJob(@Param('id', ParseIntPipe) id: number) {
-    return this.jobService.removeJob(id);
+    return this.jobService.deleteJob(id);
   }
 }
