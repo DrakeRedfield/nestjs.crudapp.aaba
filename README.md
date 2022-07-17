@@ -56,4 +56,4 @@ $ npm run test:cov
 ## Stay in touch
 
 - Author - [Angel Antonio Barco](https://drakeredfield.github.io/)
-- Twitter - [LinkedIn](https://www.linkedin.com/in/angel-antonio-barco-alfaro-b36b6316a/)
+- Social - [LinkedIn](https://www.linkedin.com/in/angel-antonio-barco-alfaro-b36b6316a/)
