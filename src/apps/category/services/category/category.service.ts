@@ -35,7 +35,7 @@ export class CategoryService {
 
     const updatedCategoryData = Object.assign(
       previousCategoryData,
-      newCategoryData
+      newCategoryData,
     );
     return this.categoryRepository.save(updatedCategoryData);
   }
