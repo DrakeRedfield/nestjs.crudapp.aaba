@@ -5,6 +5,7 @@ import { ProductModule } from './product/product.module';
 import { PromotionDiscountModule } from './promotion-discount/promotion-discount.module';
 import { CategoryModule } from './category/category.module';
 import { JobModule } from './job/job.module';
+import { LoginModule } from './login/login.module';
 
 @Module({
   exports: [
@@ -14,6 +15,7 @@ import { JobModule } from './job/job.module';
     PromotionDiscountModule,
     CategoryModule,
     JobModule,
+    LoginModule,
   ],
   imports: [
     EmployeeModule,
@@ -22,6 +24,7 @@ import { JobModule } from './job/job.module';
     PromotionDiscountModule,
     CategoryModule,
     JobModule,
+    LoginModule,
   ],
 })
 export class AppsModule {}
