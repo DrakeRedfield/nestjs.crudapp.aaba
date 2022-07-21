@@ -1,0 +1,20 @@
+version: "4.10"
+services:
+  crud-app-postgres:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=crudapp
+    volumes:
+      - postgres-data:/var/lib/pgsql/data
+  crudapp-nestjs:
+    build: .
+    ports:
+      - "3001:3000"
+    links:
+      - crud-app-postgres
+
+volumes:
+  postgres-data:
