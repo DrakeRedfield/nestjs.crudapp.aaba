@@ -5,7 +5,7 @@ export const getRepositoryConfig = (entity) => {
     provide: getRepositoryToken(entity),
     useValue: {
       create: jest.fn(),
-      save: jest.fn(),
+      save: jest.fn((data) => data),
       findOne: jest.fn(),
     },
   };

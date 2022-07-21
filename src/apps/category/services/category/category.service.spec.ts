@@ -34,9 +34,7 @@ describe('CategoryService', () => {
   describe('CRUD Category', () => {
     it('Should create a new category', async () => {
       const newCategoryName = 'New Category Testing';
-      console.log(service);
-      categoryCreated = await service.createCategory({ name: 'new Category' });
-      console.log(categoryCreated);
+      categoryCreated = await service.createCategory({ name: newCategoryName });
 
       return expect(categoryCreated?.name).toBe(newCategoryName);
     });
