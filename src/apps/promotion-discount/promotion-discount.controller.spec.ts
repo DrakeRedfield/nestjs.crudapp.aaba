@@ -9,7 +9,9 @@ describe('PromotionDiscountController', () => {
       controllers: [PromotionDiscountController],
     }).compile();
 
-    controller = module.get<PromotionDiscountController>(PromotionDiscountController);
+    controller = module.get<PromotionDiscountController>(
+      PromotionDiscountController,
+    );
   });
 
   it('should be defined', () => {

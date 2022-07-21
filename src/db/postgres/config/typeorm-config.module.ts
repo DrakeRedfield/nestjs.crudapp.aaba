@@ -13,4 +13,4 @@ import { createTypeOrmOptions } from './typeorm-config.service';
   ],
   providers: [],
 })
-export class TypeORMPostgresConfigModule {}
+export class TypeORMPostgresConfigModule { }
