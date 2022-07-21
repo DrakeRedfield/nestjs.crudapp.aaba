@@ -1,1 +1,1 @@
-export { TypeORMPostgresConfigModule } from './typeORM-config.module';
+export * from './typeorm-config.module';
