@@ -1,6 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Job } from 'src/db/postgres/entities';
+import { Job } from '../../../../db/postgres/entities';
 import { Repository, UpdateResult } from 'typeorm';
 
 @Injectable()

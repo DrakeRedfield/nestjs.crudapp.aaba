@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { RepositoryModule } from 'src/db/postgres/repository';
+import { RepositoryModule } from '../../db/postgres/repository';
 import { CategoryController } from './category.controller';
 import { CategoryService } from './services';
 
