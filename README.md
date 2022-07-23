@@ -27,6 +27,24 @@ DB_NAME = YOUR_DB_NAME
 
 **Note:** The .env file should be create at root path.
 
+## Quick Instalation
+
+You can create an .env file with the config bellow
+
+```
+DB_HOST = crud-app-postgres
+DB_PORT = 5432
+DB_USERNAME = postgres
+DB_PASSWORD = postgres
+DB_NAME = crudapp
+```
+
+and run `docker compose up`
+
+**Note:** The .env file should be create at root path.
+
+**Note:** You can change the default db and ports on docker-compose.yml and .env file
+
 ## Running the app
 
 ```bash
